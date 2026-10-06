@@ -6,7 +6,7 @@ Les contributions sont les bienvenues :
 
 - corrections
 - améliorations de la documentation
-- exemples supplémentaires
+- exemples supplémentaires ou codes
 - cas d'usage
 
 Merci d'ouvrir une issue ou une merge request.
