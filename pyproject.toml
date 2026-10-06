@@ -1,0 +1,53 @@
+[project]
+name = "data-school"
+version = "0.1.0"
+description = "All dependencies for scraping"
+requires-python = ">=3.12"
+dependencies = [
+    "beautifulsoup4>=4.14.3",
+    "browserforge>=1.2.4",
+    "curl-cffi>=0.15.0",
+    "pillow>=12.2.0",
+    "playwright>=1.59.0",
+    "requests>=2.33.1",
+    "scrapling>=0.4.7",
+    "selenium>=4.43.0",
+]
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.2.0",
+    "ruff>=0.11.12",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = [
+    "E",    # erreurs de style (pycodestyle)
+    "F",    # erreurs logiques (pyflakes)
+    "W",    # warnings de style
+    "I",    # tri des imports (isort)
+    "UP",   # modernisation Python (pyupgrade)
+    "B",    # bugs courants (flake8-bugbear)
+    "SIM",  # simplifications de code
+    "RUF",  # règles spécifiques à Ruff
+]
+ignore = [
+    "E501",   # longueur de ligne — on préfère la lisibilité des commentaires
+    "E741",   # noms de variables ambigus (f, l, etc.) — OK pour du code démo
+    "B007",   # variable de boucle inutilisée — courant dans les démos
+    "SIM108", # ternaire au lieu de if/else — moins lisible pour les débutants
+    "RUF001", # caractères Unicode ambigus — texte en français avec accents
+    "RUF002", # idem pour les docstrings
+    "RUF003", # idem pour les commentaires
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["data_school"]
+
+[tool.ruff.format]
+quote-style = "double"
+docstring-code-format = true
