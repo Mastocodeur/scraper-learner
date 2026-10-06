@@ -1,6 +1,6 @@
 # DataSchool : Scraping & Automatisation
 
-Support de la DataSchool animée par **Rémy Gasmi** sur le **web scraping** et l'**automatisation** avec Python.
+Support de la DataSchool animée par **Rémy Gasmi** sur le **web scraping** et l'**automatisation** avec Python. Bonne lecture !
 
 Ce dépôt regroupe des démos prêtes à exécuter pour apprendre à extraire des données du web et à automatiser des interactions dans un navigateur.
 
