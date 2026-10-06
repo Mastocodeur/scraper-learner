@@ -5,6 +5,8 @@ on:
     branches: [main]
     paths:
       - "docs/**.md"
+      - "docs/images/**"$
+      - "docs/gif/**"
   workflow_dispatch:
 
 jobs:
@@ -16,6 +18,8 @@ jobs:
     steps:
       - name: Checkout du repo principal
         uses: actions/checkout@v4
+        with:
+          persist-credentials: false
 
       - name: Cloner le wiki
         run: |
