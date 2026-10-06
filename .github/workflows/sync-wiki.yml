@@ -5,7 +5,7 @@ on:
     branches: [main]
     paths:
       - "docs/**.md"
-      - "docs/images/**"$
+      - "docs/images/**"
       - "docs/gif/**"
   workflow_dispatch:
 
