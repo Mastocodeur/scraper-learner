@@ -23,8 +23,7 @@ jobs:
 
       - name: Copier les fichiers Markdown vers le wiki
         run: |
-          find docs/ -maxdepth 1 -name "*.md" \
-            -exec cp {} wiki/ \;
+          cp -r docs/. wiki/
 
       - name: Commiter et pusher vers le wiki
         run: |
